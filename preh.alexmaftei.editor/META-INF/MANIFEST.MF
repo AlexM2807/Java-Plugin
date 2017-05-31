@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Editor
+Bundle-SymbolicName: preh.alexmaftei.editor;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: preh.alexmaftei.editor.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.swt,
+ org.eclipse.ui.workbench
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ swing2swt.jar
+

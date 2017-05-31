@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Artop"
+            id="preh.alexmaftei.editor">
+      </category>
+      <view
+            name="Editor ARXML"
+            icon="icons/sample.gif"
+            category="preh.alexmaftei.editor"
+            class="preh.alexmaftei.editor.views.Editor"
+            id="preh.alexmaftei.editor.views.Editor">
+      </view>
+       <view
+            name="Content Editor ARXML"
+            icon="icons/sample.gif"
+            category="preh.alexmaftei.editor"
+            class="preh.alexmaftei.editor.views.Content"
+            id="preh.alexmaftei.editor.views.Content">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.ProblemView"
+               relationship="right"
+               id="preh.alexmaftei.editor.views.Editor">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <Generic></Generic>
+   </extension>
+
+</plugin>
